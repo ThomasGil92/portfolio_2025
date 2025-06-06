@@ -196,10 +196,7 @@ export const LatestWorks = () => {
   ];
 
   return (
-    <section
-      id='latest-works'
-      className='w-full mt-8 bg-background'
-    >
+    <section id='latest-works' className='w-full mt-8 bg-background'>
       <BlurFade delay={0.25} inView>
         <div className='container px-4 md:px-6'>
           <div className='flex flex-col items-center justify-center space-y-4 text-center'>
@@ -211,7 +208,7 @@ export const LatestWorks = () => {
             </p>
           </div>
 
-          <div className='grid grid-cols-2 gap-6 mt-12'>
+          <div className='grid grid-cols-1  lg:grid-cols-2 gap-6 mt-12'>
             {works.map((work) => (
               <BlurFade key={work.id} delay={0.25 * 1.5} inView>
                 <Card className='overflow-hidden group transition-all duration-300 hover:shadow-lg hover:-translate-y-1'>

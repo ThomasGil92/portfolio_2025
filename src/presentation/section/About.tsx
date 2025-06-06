@@ -4,7 +4,7 @@ export function About() {
   return (
     <section id='about' className='mt-8'>
       <BlurFade delay={0.25} inView>
-        <h2 className='text-2xl font-bold'>À propos</h2>
+        <h2 className='text-2xl font-bold'>About me</h2>
         <div className='text-muted-foreground'>
           <p>
             I come from a background in the restaurant industry, and in 2018, I
