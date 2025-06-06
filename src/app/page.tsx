@@ -1,6 +1,5 @@
 import { Hero } from "@/presentation/section/Hero";
 import { About } from "@/presentation/section/About";
-//import { Banner } from "@/presentation/section/Banner";
 import { WorkXp } from "@/presentation/section/WorkXp";
 import { Skills } from "@/presentation/section/Skills";
 import { LatestWorks } from "@/presentation/section/LatestWorks";
@@ -12,7 +11,6 @@ export default function Home() {
     <>
       <Hero />
       <About />
-      {/* <Banner /> */}
       <WorkXp />
       <Skills />
       <LatestWorks />
