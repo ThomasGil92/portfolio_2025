@@ -83,7 +83,7 @@ export function GHRepos({ username = "thomasgil92" }: GHReposProps) {
   }
 
   return (
-    <section id='gh-repos' className='container mx-auto px-4 mt-8'>
+    <section id='gh-repos' className='container mx-auto mt-8'>
       <div className='mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 mb-12 text-center'>
         <h2 className='text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-gray-900 dark:text-white'>
           My GitHub Repositories

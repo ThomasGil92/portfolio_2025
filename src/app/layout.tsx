@@ -28,7 +28,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className='container mx-auto max-w-2xl py-12 sm:py-24 px-6'>
+        <div className='container mx-auto max-w-2xl py-24 px-6'>
           {children}
         </div>
         <BottomNav />
