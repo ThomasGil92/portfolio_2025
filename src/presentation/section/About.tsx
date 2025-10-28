@@ -2,10 +2,13 @@ import { BlurFade } from "@/components/ui/blur-fade";
 
 export function About() {
   return (
-    <section id='about' className='mt-8'>
+    <section
+      id='about'
+      className='mt-10 container mx-auto px-6 py-8 rounded-2xl border border-white/15 bg-background/20 backdrop-blur-lg shadow-2xl'
+    >
       <BlurFade delay={0.25} inView>
-        <h2 className='text-2xl font-bold'>About me</h2>
-        <div className='text-muted-foreground'>
+        <h2 className='text-2xl font-bold px-2 text-neutral-900 dark:text-white'>About me</h2>
+        <div className='p-2 pt-4'>
           <p>
             I come from a background in the restaurant industry, and in 2018, I
             transitioned into web development. I started building my own

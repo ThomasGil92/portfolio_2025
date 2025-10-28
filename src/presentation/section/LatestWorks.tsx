@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Play, X } from "lucide-react";
 import ReactPlayer, { YouTubeConfig } from "react-player/youtube";
 import { BlurFade } from "@/components/ui/blur-fade";
+import Image from "next/image";
 
 // Inline components to avoid module resolution issues
 type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
@@ -196,14 +197,17 @@ export const LatestWorks = () => {
   ];
 
   return (
-    <section id='latest-works' className='w-full mt-8 bg-background'>
+    <section
+      id='latest-works'
+      className='w-full mt-10 container mx-auto px-6 py-10 rounded-2xl border border-white/15 bg-background/20 backdrop-blur-lg shadow-2xl text-neutral-200'
+    >
       <BlurFade delay={0.25} inView>
         <div className='container px-4 md:px-6'>
           <div className='flex flex-col items-center justify-center space-y-4 text-center'>
-            <h2 className='text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl'>
+            <h2 className='text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white'>
               Latest Works
             </h2>
-            <p className='max-w-[700px] text-muted-foreground md:text-xl'>
+            <p className='max-w-[700px] text-neutral-300 md:text-xl'>
               Check out some of my recent projects and articles
             </p>
           </div>
@@ -216,10 +220,12 @@ export const LatestWorks = () => {
                     className='relative aspect-video overflow-hidden cursor-pointer'
                     onClick={() => work.type === "video" && openVideo(work.url)}
                   >
-                    <img
+        <img
                       src={work.thumbnailUrl}
                       alt={work.title}
-                      className='w-full h-full object-cover transition-transform group-hover:scale-105'
+                      fill
+                      sizes='(max-width: 1024px) 100vw, 50vw'
+                      className='object-cover transition-transform group-hover:scale-105'
                     />
                     {work.type === "video" && (
                       <div className='absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/20 transition-colors'>
@@ -242,26 +248,28 @@ export const LatestWorks = () => {
                     </CardTitle>
                   </CardHeader>
                   <CardContent className='p-4 pt-0 space-y-3'>
-                    <p className='text-muted-foreground line-clamp-2'>
+                    <p className='text-neutral-300 line-clamp-2'>
                       {work.description}
                     </p>
                     <div className='flex flex-wrap gap-2'>
                       {work.technologies.map((tech) => (
                         <span
                           key={tech}
-                          className='inline-flex items-center rounded-full bg-muted px-2.5 py-0.5 text-xs font-medium text-muted-foreground border border-border'
+                          className='inline-flex items-center rounded-full bg-muted px-2.5 py-0.5 text-xs font-medium text-neutral-200 border border-border'
                         >
                           {tech}
                         </span>
                       ))}
                     </div>
                   </CardContent>
-                  <CardFooter className='p-4 pt-0 text-sm text-muted-foreground'>
-                    {new Date(work.date).toLocaleDateString("en-US", {
-                      year: "numeric",
-                      month: "long",
-                      day: "numeric",
-                    })}
+                  <CardFooter className='p-4 pt-0 text-sm text-neutral-300'>
+                    <div className='flex items-center gap-2'>
+                      {new Date(work.date).toLocaleDateString("en-US", {
+                        year: "numeric",
+                        month: "long",
+                        day: "numeric",
+                      })}
+                    </div>
                   </CardFooter>
                 </Card>
               </BlurFade>

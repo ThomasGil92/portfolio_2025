@@ -83,7 +83,10 @@ const allLogos = [
 ];
 export function Banner() {
   return (
-    <section id='banner' className='mt-8'>
+    <section
+      id='banner'
+      className='mt-10 container mx-auto px-6 py-8 rounded-2xl border border-white/15 bg-background/20 backdrop-blur-lg shadow-2xl text-neutral-200'
+    >
       <BlurFade delay={0.25} inView>
         <LogoCarousel columnCount={3} logos={allLogos} />
       </BlurFade>

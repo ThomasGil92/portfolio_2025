@@ -59,7 +59,7 @@ export function Skills() {
   return (
     <section
       id='skills'
-      className='pt-8 pb-2 rounded drop-shadow-xl bg-gray-50 dark:bg-gray-900'
+      className='pt-8 pb-2 container mx-auto px-4 rounded-2xl border border-white/20 bg-background/40 backdrop-blur-md shadow-lg'
     >
       <div className='container mx-auto px-4'>
         <BlurFade delay={0.25} inView>
