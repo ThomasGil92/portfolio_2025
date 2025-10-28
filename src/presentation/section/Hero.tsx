@@ -6,7 +6,7 @@ export function Hero() {
   return (
     <section
       id='hero'
-      className='py-10 md:py-14 lg:py-20 container mx-auto px-6 rounded-2xl border border-white/15 bg-background/20 backdrop-blur-lg shadow-2xl text-neutral-200'
+      className='py-10 md:py-14 lg:py-20 container mx-auto px-6 rounded-2xl border border-white/15 bg-background/20 backdrop-blur-lg shadow-2xl text-dark'
     >
       <div className='mx-auto'>
         <div className='flex flex-col-reverse items-center md:flex-row md:justify-between gap-2 '>
@@ -17,7 +17,7 @@ export function Hero() {
               </h1>
             </BlurFade>
             <BlurFade delay={0.25 * 2} inView>
-              <p className='text-lg sm:text-xl text-neutral-300 max-w-2xl mx-auto md:mx-0'>
+              <p className='text-lg sm:text-xl text-dark max-w-2xl mx-auto md:mx-0'>
                 Hi, I’m Thomas — a full‑stack developer passionate about building
                 crisp UIs and robust backends.
               </p>

@@ -237,7 +237,7 @@ export function WorkXp() {
                   <div
                     className={`overflow-hidden transition-all duration-500 ease-in-out ${
                       expandedItem === exp.id
-                        ? "max-h-96 opacity-100 border-t border-gray-100"
+                        ? "max-h-[100vh] opacity-100 border-t border-gray-100"
                         : "max-h-0 opacity-0"
                     }`}
                   >

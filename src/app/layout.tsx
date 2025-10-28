@@ -26,24 +26,24 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-neutral-950 relative min-h-screen overflow-x-clip`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white relative min-h-screen overflow-x-clip`}
       >
         {/* Decorative gradient circles background */}
-        <div aria-hidden className='pointer-events-none fixed inset-0 -z-10 overflow-hidden'>
-          {/* Slightly off-centered main blob */}
+       {/*  <div aria-hidden className='pointer-events-none fixed inset-0 -z-10 overflow-hidden'>
+      
           <div
             className='absolute left-[55%] top-[40%] -translate-x-1/2 -translate-y-1/2 h-[34rem] w-[34rem] rounded-full bg-gradient-to-br from-fuchsia-500 via-purple-600 to-sky-500 opacity-20 blur-[140px]'
           />
-          {/* Supporting blob lower-left */}
+          
           <div
             className='absolute left-[30%] top-[75%] -translate-x-1/2 -translate-y-1/2 h-[26rem] w-[26rem] rounded-full bg-gradient-to-br from-rose-500 to-orange-400 opacity-14 blur-[120px]'
           />
-          {/* Large corner blobs */}
+          
           <div className='absolute -top-32 -left-24 h-[28rem] w-[28rem] rounded-full bg-gradient-to-br from-sky-400 to-cyan-500 opacity-14 blur-[120px]' />
           <div className='absolute -bottom-32 -right-24 h-[28rem] w-[28rem] rounded-full bg-gradient-to-br from-amber-400 to-rose-500 opacity-12 blur-[120px]' />
-          {/* Edge vertical band (left) */}
+         
           <div className='absolute left-[-10%] top-1/2 -translate-y-1/2 h-[90%] w-[18rem] rounded-full bg-gradient-to-b from-emerald-400/0 via-emerald-400/20 to-teal-500/0 blur-[120px]' />
-          {/* Additional color sources */}
+          
           <div
             className='absolute top-10 left-[15%] h-60 w-60 rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 opacity-15 blur-[100px]'
           />
@@ -59,9 +59,9 @@ export default function RootLayout({
           <div
             className='absolute bottom-10 right-[12%] h-64 w-64 rounded-full bg-gradient-to-br from-sky-400 to-indigo-500 opacity-12 blur-[110px]'
           />
-        </div>
+        </div> */}
 
-        <div className='container mx-auto max-w-2xl py-28 md:py-32 px-6 relative z-10'>
+        <div className='container  mx-auto max-w-2xl py-28 md:py-32 px-6 relative z-10'>
           {children}
         </div>
         <div className='relative z-10'>

@@ -198,15 +198,15 @@ export const LatestWorks = () => {
   return (
     <section
       id='latest-works'
-      className='w-full mt-10 container mx-auto px-6 py-10 rounded-2xl border border-white/15 bg-background/20 backdrop-blur-lg shadow-2xl text-neutral-200'
+      className='w-full mt-10 container mx-auto px-6 py-10 rounded-2xl border border-white/15 bg-background/20 backdrop-blur-lg shadow-2xl text-dark'
     >
       <BlurFade delay={0.25} inView>
         <div className='container px-4 md:px-6'>
           <div className='flex flex-col items-center justify-center space-y-4 text-center'>
-            <h2 className='text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white'>
+            <h2 className='text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-dark'>
               Latest Works
             </h2>
-            <p className='max-w-[700px] text-neutral-300 md:text-xl'>
+            <p className='max-w-[700px] text-  md:text-xl'>
               Check out some of my recent projects and articles
             </p>
           </div>
@@ -234,7 +234,7 @@ export const LatestWorks = () => {
                     )}
                   </div>
                   <CardHeader className='p-4'>
-                    <CardTitle className='text-xl line-clamp-2'>
+                    <CardTitle className='text-xl line-clamp-2 text-dark'>
                       <a
                         href={work.url}
                         target='_blank'
@@ -246,21 +246,21 @@ export const LatestWorks = () => {
                     </CardTitle>
                   </CardHeader>
                   <CardContent className='p-4 pt-0 space-y-3'>
-                    <p className='text-neutral-300 line-clamp-2'>
+                    <p className='text-dark line-clamp-2'>
                       {work.description}
                     </p>
                     <div className='flex flex-wrap gap-2'>
                       {work.technologies.map((tech) => (
                         <span
                           key={tech}
-                          className='inline-flex items-center rounded-full bg-muted px-2.5 py-0.5 text-xs font-medium text-neutral-200 border border-border'
+                          className='inline-flex items-center rounded-full bg-muted px-2.5 py-0.5 text-xs font-medium text-dark border border-border'
                         >
                           {tech}
                         </span>
                       ))}
                     </div>
                   </CardContent>
-                  <CardFooter className='p-4 pt-0 text-sm text-neutral-300'>
+                  <CardFooter className='p-4 pt-0 text-sm text-dark'>
                     <div className='flex items-center gap-2'>
                       {new Date(work.date).toLocaleDateString("en-US", {
                         year: "numeric",

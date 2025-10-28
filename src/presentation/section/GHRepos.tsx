@@ -57,7 +57,7 @@ export function GHRepos({ username = "thomasgil92" }: GHReposProps) {
     return (
       <section
         id='gh-repos'
-        className='mt-10 container mx-auto px-6 py-12 rounded-2xl border border-white/15 bg-background/20 backdrop-blur-lg shadow-2xl text-neutral-200'
+        className='mt-10 container mx-auto px-6 py-12 rounded-2xl border border-white/15 bg-background/20 backdrop-blur-lg shadow-2xl text-dark'
       >
         <h2 className='text-3xl font-bold mb-8 text-gray-800 dark:text-white'>
           My GitHub Repositories
@@ -78,7 +78,7 @@ export function GHRepos({ username = "thomasgil92" }: GHReposProps) {
     return (
       <section
         id='gh-repos'
-        className='mt-10 container mx-auto px-6 py-12 rounded-2xl border border-white/15 bg-background/20 backdrop-blur-lg shadow-2xl text-neutral-200'
+        className='mt-10 container mx-auto px-6 py-12 rounded-2xl border border-white/15 bg-background/20 backdrop-blur-lg shadow-2xl text-dark'
       >
         <h2 className='text-3xl font-bold mb-8 text-gray-800 dark:text-white'>
           My GitHub Repositories
@@ -91,13 +91,13 @@ export function GHRepos({ username = "thomasgil92" }: GHReposProps) {
   return (
     <section
       id='gh-repos'
-      className='container mx-auto mt-10 px-6 py-10 rounded-2xl border border-white/15 bg-background/20 backdrop-blur-lg shadow-2xl text-neutral-200'
+      className='container mx-auto mt-10 px-6 py-10 rounded-2xl border border-white/15 bg-background/20 backdrop-blur-lg shadow-2xl text-dark'
     >
       <div className='mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 mb-12 text-center'>
-        <h2 className='text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white'>
+        <h2 className='text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-dark'>
           My GitHub Repositories
         </h2>
-        <p className='mx-auto mt-4 max-w-2xl text-neutral-300'>
+        <p className='mx-auto mt-4 max-w-2xl text-dark'>
           Check out my latest open-source projects and contributions on GitHub
         </p>
         <a
@@ -132,12 +132,12 @@ export function GHRepos({ username = "thomasgil92" }: GHReposProps) {
             </div>
 
             {repo.description && (
-              <p className='text-neutral-400 mb-4 line-clamp-2'>
+              <p className='text-dark mb-4 line-clamp-2'>
                 {repo.description}
               </p>
             )}
 
-            <div className='flex items-center text-sm text-neutral-400 space-x-4'>
+            <div className='flex items-center text-sm text-dark space-x-4'>
               {repo.language && (
                 <div className='flex items-center'>
                   <span className='w-3 h-3 rounded-full bg-blue-500 mr-1'></span>
@@ -154,7 +154,7 @@ export function GHRepos({ username = "thomasgil92" }: GHReposProps) {
               </div>
             </div>
 
-            <div className='mt-4 text-xs text-neutral-400'>
+            <div className='mt-4 text-xs text-dark'>
               Updated on {formatDate(repo.updated_at)}
             </div>
           </div>
