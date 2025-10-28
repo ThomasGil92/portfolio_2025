@@ -3,7 +3,6 @@ import { useState } from "react";
 import { Play, X } from "lucide-react";
 import ReactPlayer, { YouTubeConfig } from "react-player/youtube";
 import { BlurFade } from "@/components/ui/blur-fade";
-import Image from "next/image";
 
 // Inline components to avoid module resolution issues
 type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
@@ -220,10 +219,9 @@ export const LatestWorks = () => {
                     className='relative aspect-video overflow-hidden cursor-pointer'
                     onClick={() => work.type === "video" && openVideo(work.url)}
                   >
-        <img
+                    <img
                       src={work.thumbnailUrl}
                       alt={work.title}
-                      fill
                       sizes='(max-width: 1024px) 100vw, 50vw'
                       className='object-cover transition-transform group-hover:scale-105'
                     />
